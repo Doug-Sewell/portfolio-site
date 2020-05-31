@@ -1,0 +1,26 @@
+.NavContainer {
+    padding: 1rem;
+    background-color: rebeccapurple;
+    border-bottom:black 1px solid;
+    box-shadow:1px 2px 3px rebeccapurple;
+    position:fixed;
+    width:100%;
+}
+
+.NavList {
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.NavList > li {
+    color:#FFF;
+    margin-right:1rem;
+    text-align:center;
+}
+
+.NavList > li:hover {
+    text-decoration:underline;
+    color:yellow;
+}

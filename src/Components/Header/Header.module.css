@@ -1,5 +1,5 @@
 .headerContainer {
-    padding:1.5rem;
+    padding: 0 1.5rem;
     display:flex;
 }
 
@@ -8,11 +8,14 @@
     margin: auto;
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
     justify-content: center;
+    align-items: center;
 }
 
-.photo {
-    max-width:10rem;
+.photoContainer {
+    max-width:15rem;
 }
 
+h1 {
+    margin-bottom:1rem;
+}

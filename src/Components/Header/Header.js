@@ -6,13 +6,15 @@ import Card from '../../UI/Card/Card';
 const Header = () => (
     <div className={classes.headerContainer}>
         <div className={classes.header}>
-            <div className={classes.photo}>
+            <div className={classes.photoContainer}>
                 <Photo />
             </div>
-            <Card className={classes.Card}>
-                <h1>Doug Sewell</h1>
-                <h2>Let's Build Great Things Together</h2>
-            </Card>
+            <div className={classes.HeaderCard}>
+                <Card>
+                    <h1>Doug Sewell</h1>
+                    <h2 className={classes.SubHeader}>Let's Build Great Things Together</h2>
+                </Card>
+            </div>
         </div>
     </div>
 )
