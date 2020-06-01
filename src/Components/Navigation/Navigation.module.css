@@ -3,7 +3,6 @@
     background-color: rebeccapurple;
     border-bottom:black 1px solid;
     box-shadow:1px 2px 3px rebeccapurple;
-    position:fixed;
     width:100%;
 }
 
@@ -14,13 +13,16 @@
     justify-content: space-evenly;
 }
 
-.NavList > li {
+.NavList > li > a {
     color:#FFF;
     margin-right:1rem;
     text-align:center;
 }
 
-.NavList > li:hover {
-    text-decoration:underline;
+.NavList > li>a:hover {
+    text-decoration:none;
     color:yellow;
+}
+.NavList > li>a:visited {
+    color:white;
 }
