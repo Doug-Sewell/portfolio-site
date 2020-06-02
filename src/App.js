@@ -7,12 +7,13 @@ import Header from './Components/Header/Header';
 import Navigation from './Components/Navigation/Navigation';
 import JobExperience from './Components/JobExperience/JobExperience';
 import Contact from './Components/Contact/Contact';
-
+import Backdrop from './UI/BackDrop/BackDrop';
 
 
 function App() {
   return (
     <BrowserRouter>
+    <Backdrop />
       <Navigation />
         <Route path="/" exact component={Header} />
         <Route path="/professional-experience" exact component={JobExperience} />

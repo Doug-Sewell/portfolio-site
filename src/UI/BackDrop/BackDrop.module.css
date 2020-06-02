@@ -1,0 +1,242 @@
+.circleContainer {
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color:navy;
+    overflow:hidden;
+    z-index:-5;
+  }
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    opacity:.5;
+  }
+  
+  .one{
+    left:20%;
+    top:20px;
+    height:15rem;
+    width:15rem;
+    background-color:yellow;
+    opacity:1;
+    z-index:1;
+    animation: circleAnimation 40s linear infinite;
+  }
+  
+  @keyframes circleAnimation{
+    0%{
+      opacity:0;
+      transform:translateY(-60vh);
+    }
+    90%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+      transform:translateY(150vh);
+    }
+  }
+  
+  .two{
+    bottom:30px;
+    left:70px;
+    height:140px;
+    width:140px;
+    background-color:aqua;
+    opacity:.5;
+    filter:blur(3px);
+    animation: circleAnimation 20s linear infinite;
+  }
+  
+  .three{
+    left:50%;
+    bottom:50%;
+    height:30rem;
+    width:30rem;
+    background-color:purple;
+    opacity:.5;
+    filter:blur(5px);
+    animation: circleAnimation 60s linear infinite;
+  }
+  
+  .four{
+    right:10rem;
+    bottom:2rem;
+    height:5rem;
+    width:5rem;
+    background-color:red;
+    filter:blur(5px);
+    animation: circleAnimation 15s linear infinite;
+  }
+  
+  .five{
+    right:20%;
+    bottom:0;
+    height:30rem;
+    width:30rem;
+    background-color:limegreen;
+    filter:blur(20px);
+    z-index:-1;
+    animation: circleAnimation 30s linear infinite;
+  }
+  
+  .six{
+    left:20%;
+    top:15%;
+    height:50rem;
+    width:50rem;
+    background-color:green;
+    filter:blur(30px);
+    animation: circleAnimation 70s linear infinite;
+  }
+  
+  .seven{
+    right:10%;
+    top:10%;
+    height:15rem;
+    width:15rem;
+    background-color:skyblue;
+    filter:blur(5px);
+    animation: circleAnimation 22s linear infinite;
+  }
+  
+  .eight{
+    height:20rem;
+    width:20rem;
+    background-color:Red;
+    left:50%;
+    filter:blur(5px);
+    z-index:-2;
+    animation: circleAnimation 53s linear infinite;
+  }
+  
+  .nine{
+    left:10rem;
+    top:3rem;
+    width:2rem;
+    height:2rem;
+    background-color:purple;
+    filter:blur(2px);
+    animation: circleAnimation 17s linear infinite;
+  }
+  
+  .ten{
+    width:7rem;
+    height:7rem;
+    background-color:aqua;
+    opacity:1;
+    left:55%;
+    bottom:3rem;
+    animation: circleAnimation 42s linear infinite;
+  }
+  
+  .eleven{
+    width:8rem;
+    height:8rem;
+    background-color:green;
+    opacity:.8;
+    left:30%;
+    top:-5rem;
+    animation: circleAnimation 10s linear infinite;
+  }
+  
+  .twelve{
+    width:8rem;
+    height:8rem;
+    background-color:teal;
+    opacity:1;
+    z-index:1;
+    top:-5rem;
+    right:10rem;
+    animation: circleAnimation 37s linear infinite;
+  }
+  
+  .thirteen{
+    width:14rem;
+    height:14rem;
+    background-color:green;
+    opacity:.5;
+    top:-5rem;
+    right:70rem;
+    animation: circleAnimation 18s linear infinite;
+  }
+  
+  .fourteen{
+      width:40rem;
+    height:40rem;
+    background-color:red;
+    opacity:.5;
+    z-index:1;
+    top:-20rem;
+    right:40%;
+    filter:blur(20px);
+    z-index:-1;
+    animation: circleAnimation 8s linear infinite;
+  }
+  
+  .fifteen{
+    width:20rem;
+    height:20rem;
+    background-color:magenta;
+    opacity:.7;
+    top:-20rem;
+    right:.5rem;
+    animation: circleAnimation 19s linear infinite;
+    filter:blur(8px);
+  }
+  
+  .sixteen{
+    width:16rem;
+    height:16rem;
+    background-color:pink;
+    opacity:.5;
+    filter:blur(5px);
+    top:-16rem;
+    right:19rem;
+    animation: circleAnimation 29s linear infinite;
+  }
+  
+  .seventeen{
+    width:17rem;
+    height:17rem;
+    background-color:orange;
+    opacity:.8;
+    top:-5rem;
+    left:7rem;
+    filter:blur(5px);
+    animation: circleAnimation 11s linear infinite;
+  }
+  
+  .eighteen{
+    width:24rem;
+    height:24rem;
+    background-color:purple;
+    opacity:.3;
+    filter:blur(5px);
+    top:-5rem;
+    left:20rem;
+    animation: circleAnimation 14s linear infinite;
+  }
+  
+  .nineteen{
+    width:3rem;
+    height:3rem;
+    background-color:yellowgreen;
+    opacity:.7;
+    top:-5rem;
+    left:23rem;
+    animation: circleAnimation 39s linear infinite;
+    filter:blur(5px);
+  }
+  
+  .twenty{
+    width:17rem;
+    height:17rem;
+    background-color:red;
+    opacity:.5;
+    top:-5rem;
+    left:40rem;
+    animation: circleAnimation 45s linear infinite;
+    filter:blur(5px);
+  }
