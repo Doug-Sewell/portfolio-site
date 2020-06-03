@@ -1,10 +1,14 @@
 .headerContainer {
-    padding: 0 1.5rem;
+    display:flex;
+    min-height:100vh;
+}
+
+.headerContainer {
     display:flex;
 }
 
 .header {
-    min-height:100vh;
+    
     margin: auto;
     display:flex;
     flex-direction:column;
