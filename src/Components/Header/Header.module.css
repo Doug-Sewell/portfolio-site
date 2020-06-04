@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+.HeaderCard {
+    width:80%;
+}
+
 .photoContainer {
     max-width:15rem;
 }
