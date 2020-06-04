@@ -40,7 +40,7 @@ class JobExperience extends Component {
         });
 
         return (
-            <div>
+            <div className={classes.Container}>
                 <h1>Work Experience</h1>
                 {jobs}
             </div>

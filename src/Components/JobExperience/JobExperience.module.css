@@ -1,6 +1,13 @@
 .JobCard {
     width:80%;
-    margin:auto;
     margin-bottom:1rem;
     text-align:center;
+}
+
+.Container {
+    display:flex;
+    flex-flow: column;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
 }
