@@ -1,0 +1,32 @@
+.ModalContainer {
+    height: 100vh;
+    width:100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Modal {
+    background-color:#FFF;
+    padding:2rem;
+    border-radius:0.5rem;
+    position:relative;
+    width:80%;
+    max-width:720px;
+    max-height:500px;
+    overflow-y: auto;
+}
+
+.Exit {
+    position:absolute;
+    font-size:1.25rem;
+    top:1rem;
+    right:1rem;
+    cursor:pointer;
+}
+
+hr {
+    margin: 1rem 0;
+}

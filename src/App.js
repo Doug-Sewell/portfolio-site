@@ -8,16 +8,17 @@ import Navigation from './Components/Navigation/Navigation';
 import JobExperience from './Components/JobExperience/JobExperience';
 import Contact from './Components/Contact/Contact';
 import Backdrop from './UI/BackDrop/BackDrop';
+import Modal from './UI/Modal/Modal';
 
 
 function App() {
   return (
     <BrowserRouter>
-    <Backdrop />
+      <Backdrop />
       <Navigation />
-        <Route path="/" exact component={Header} />
-        <Route path="/professional-experience" exact component={JobExperience} />
-        <Route path="/Contact" exact component={Contact} />
+      <Route path="/" exact component={Header} />
+      <Route path="/professional-experience" exact component={JobExperience} />
+      <Route path="/Contact" exact component={Contact} />
     </BrowserRouter>
   );
 }

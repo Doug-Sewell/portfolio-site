@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../../UI/Card/Card';
+import Modal from '../../UI/Modal/Modal';
 import classes from './JobExperience.module.css';
 
 class JobExperience extends Component {
@@ -9,7 +10,14 @@ class JobExperience extends Component {
             {
                 company: 'Practis',
                 title: 'Digital Marketing Technologist',
-                description: 'Add later'
+                description: 'Assist Development Team as well as Marketing Managers in site updates. Utilize various web development and marketing tools to research and identify strategy and digital marketing opportunities for clients.',
+                responsibilities: ['Editing and implementing code such as PHP, HTML, CSS, and JavaScript on client accounts',
+                    'Website updates & troubleshooting various content management systems (CMS) or through SFTP.',
+                    'Routinely audit client websites for WCAG 2.0 AA accessibility and website performance',
+                    'Learn front-end technologies and obtain knowledge of latest web and online marketing standards.',
+                    'Provide web support for internal and external customers.',
+                    'Publish web content across web properties on WordPress websites as well as make theme updates as needed.',
+                    'Creation and modification of JSON for web page structured data (schema)']
             },
             {
                 company: 'Straight North',
@@ -26,7 +34,8 @@ class JobExperience extends Component {
                 title: 'SEO Analyst',
                 description: 'Add later'
             }
-        ]
+        ],
+        showModal: true
     }
 
     render() {
@@ -39,10 +48,21 @@ class JobExperience extends Component {
             </div>);
         });
 
+        let modal = null;
+
+        if (this.state.showModal) {
+            modal = <Modal
+                company={this.state.jobs[0].company}
+                jobTitle={this.state.jobs[0].title}
+                jobDescription={this.state.jobs[0].description}
+                jobResponsibilities={this.state.jobs[0].responsibilities} />
+        }
+
         return (
             <div className={classes.Container}>
                 <h1>Work Experience</h1>
                 {jobs}
+                {modal}
             </div>
         )
     }
