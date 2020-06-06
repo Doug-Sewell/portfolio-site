@@ -6,15 +6,16 @@ const modal = props => {
     let responsibilities = null;
 
     if (props.jobResponsibilities) {
-        responsibilities = props.jobResponsibilities.map((responsibility,index) => <li key={index}>{responsibility}</li>);
+        responsibilities = props.jobResponsibilities.map((responsibility, index) => <li key={index}>{responsibility}</li>);
     }
 
     return (
-        <div className={classes.ModalContainer}>
+        <div className={classes.ModalContainer}
+            onClick={() => props.closeModal()}>
             <div className={classes.Modal}>
-                <p 
-                className={classes.Exit}
-                onClick={() => props.closeModal()}>X</p>
+                <p
+                    className={classes.Exit}
+                    onClick={() => props.closeModal()}>X</p>
                 <h2>{props.company}</h2>
                 <h3>{props.jobTitle}</h3>
                 <hr />
