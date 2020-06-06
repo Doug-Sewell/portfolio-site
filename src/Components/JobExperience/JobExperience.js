@@ -38,12 +38,15 @@ class JobExperience extends Component {
         showModal: true
     }
 
+    closeModal() {
+        this.setState({ showModal: false });
+    }
+
     render() {
 
         const jobs = this.state.jobs.map((job, index) => {
-            return (<div className={classes.JobCard}>
+            return (<div key={index} className={classes.JobCard}>
                 <Card
-                    key={index}
                     className={classes.JobCard}>{job.company}</Card>
             </div>);
         });
@@ -55,7 +58,8 @@ class JobExperience extends Component {
                 company={this.state.jobs[0].company}
                 jobTitle={this.state.jobs[0].title}
                 jobDescription={this.state.jobs[0].description}
-                jobResponsibilities={this.state.jobs[0].responsibilities} />
+                jobResponsibilities={this.state.jobs[0].responsibilities}
+                closeModal={() => this.closeModal()} />
         }
 
         return (

@@ -20,10 +20,11 @@
     text-align:center;
 }
 
-.NavList > li>a:hover {
-    text-decoration:none;
-    color:yellow;
-}
 .NavList > li>a:visited {
     color:white;
+}
+
+.NavList > li> a:hover {
+    text-decoration:none;
+    color:orange;
 }

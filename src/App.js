@@ -8,7 +8,6 @@ import Navigation from './Components/Navigation/Navigation';
 import JobExperience from './Components/JobExperience/JobExperience';
 import Contact from './Components/Contact/Contact';
 import Backdrop from './UI/BackDrop/BackDrop';
-import Modal from './UI/Modal/Modal';
 
 
 function App() {
