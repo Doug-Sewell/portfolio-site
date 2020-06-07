@@ -20,7 +20,7 @@ const modal = props => {
                 <h3>{props.jobTitle}</h3>
                 <hr />
                 <p>{props.jobDescription}</p>
-                {props.jobResponsibilities ? <ul>{responsibilities}</ul> : <p>Yo.</p>}
+                {props.jobResponsibilities ? <ul>{responsibilities}</ul> : null}
             </div>
         </div>);
 }
