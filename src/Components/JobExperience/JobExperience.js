@@ -87,7 +87,8 @@ class JobExperience extends Component {
                 jobDescription={this.state.jobs[this.state.jobToDisplay].description}
                 jobResponsibilities={this.state.jobs[this.state.jobToDisplay].responsibilities}
                 closeModal={() => this.closeModal()}
-                show={this.state.showModal} />
+                show={this.state.showModal}
+                 />
         }
 
         return (

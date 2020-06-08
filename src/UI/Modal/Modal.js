@@ -9,10 +9,19 @@ const modal = props => {
         responsibilities = props.jobResponsibilities.map((responsibility, index) => <li key={index}>{responsibility}</li>);
     }
 
+
+
+
     return (
         <div className={classes.ModalContainer}
-            onClick={() => props.closeModal()}>
-            <div className={classes.Modal}>
+            onClick={() => props.closeModal()}
+        >
+            <div className={classes.Modal}
+                style={{
+                    transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
+                    opacity: props.show ? '1' : '0',
+
+                }} >
                 <p
                     className={classes.Exit}
                     onClick={() => props.closeModal()}>X</p>
@@ -22,7 +31,7 @@ const modal = props => {
                 <p>{props.jobDescription}</p>
                 {props.jobResponsibilities ? <ul>{responsibilities}</ul> : null}
             </div>
-        </div>);
+        </div>);                                                                                        
 }
 
 export default modal;
