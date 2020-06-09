@@ -51,10 +51,10 @@ class JobExperience extends Component {
             }
         ],
         showModal: false,
-        jobToDisplay: null
+        jobToDisplay: 0
     }
 
-    closeModal() {
+    closeModal = () => {
         this.setState({ showModal: false });
     }
 
@@ -78,24 +78,18 @@ class JobExperience extends Component {
             );
         });
 
-        let modal = null;
-
-        if (this.state.showModal) {
-            modal = <Modal
-                company={this.state.jobs[this.state.jobToDisplay].company}
-                jobTitle={this.state.jobs[this.state.jobToDisplay].title}
-                jobDescription={this.state.jobs[this.state.jobToDisplay].description}
-                jobResponsibilities={this.state.jobs[this.state.jobToDisplay].responsibilities}
-                closeModal={() => this.closeModal()}
-                show={this.state.showModal}
-                 />
-        }
-
         return (
             <div className={classes.Container}>
                 <h1>Work Experience</h1>
                 {jobs}
-                {modal}
+                <Modal
+                    company={this.state.jobs[this.state.jobToDisplay].company}
+                    jobTitle={this.state.jobs[this.state.jobToDisplay].title}
+                    jobDescription={this.state.jobs[this.state.jobToDisplay].description}
+                    jobResponsibilities={this.state.jobs[this.state.jobToDisplay].responsibilities}
+                    closeModal={this.closeModal}
+                    show={this.state.showModal}
+                />
             </div>
         )
     }

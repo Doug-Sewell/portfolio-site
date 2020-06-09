@@ -1,37 +1,56 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './Modal.module.css';
 
-const modal = props => {
+class Modal extends Component {
 
-    let responsibilities = null;
 
-    if (props.jobResponsibilities) {
-        responsibilities = props.jobResponsibilities.map((responsibility, index) => <li key={index}>{responsibility}</li>);
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextProps.show !== this.props.show;
     }
 
+    render() {
+
+        let responsibilities = null;
+
+        if (this.props.jobResponsibilities) {
+            responsibilities = this.props.jobResponsibilities.map((responsibility, index) => <li key={index}>{responsibility}</li>);
+        }
+
+        return (
+
+            <div>
+
+                {/*Backdrop */}
+                <div
+                    style={{ display: this.props.show ? '' : 'none' }
+                    }
+                    className={classes.Backdrop}
+                    onClick={this.props.closeModal}></div>
 
 
 
-    return (
-        <div className={classes.ModalContainer}
-            onClick={() => props.closeModal()}
-        >
-            <div className={classes.Modal}
-                style={{
-                    transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
-                    opacity: props.show ? '1' : '0',
+                {/*Modal */}
+                <div className={classes.Modal}
+                    style={{
+                        transform: this.props.show ? 'translate(-50%,-50%)' : 'translate(-50%,-100vh)', //Keeps trajectory of straight up and down.
+                        opacity: this.props.show ? '1' : '0' //Fades when show property is set to false.
 
-                }} >
-                <p
-                    className={classes.Exit}
-                    onClick={() => props.closeModal()}>X</p>
-                <h2>{props.company}</h2>
-                <h3>{props.jobTitle}</h3>
-                <hr />
-                <p>{props.jobDescription}</p>
-                {props.jobResponsibilities ? <ul>{responsibilities}</ul> : null}
+                    }} >
+                    <p
+                        className={classes.Exit}
+                        onClick={this.props.closeModal}>X</p>
+                    <h2>{this.props.company}</h2>
+                    <h3>{this.props.jobTitle}</h3>
+                    <hr />
+                    <p>{this.props.jobDescription}</p>
+                    {this.props.jobResponsibilities ? <ul>{responsibilities}</ul> : null}
+                </div>
+
             </div>
-        </div>);                                                                                        
-}
 
-export default modal;
+
+
+        );
+    }
+}
+export default Modal;
