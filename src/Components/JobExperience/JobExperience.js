@@ -71,9 +71,9 @@ class JobExperience extends Component {
                     key={index}
                     className={classes.JobCard}
                     onClick={() => this.jobClicked(index)}>
-                    <Card
-                        className={classes.JobCard}
-                    >{job.company}</Card>
+                    <Card>
+                        {job.company}
+                    </Card>
                 </div>
             );
         });

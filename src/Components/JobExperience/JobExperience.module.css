@@ -1,5 +1,6 @@
 .JobCard {
     width:80%;
+    max-width:30rem;
     margin-bottom:1rem;
     text-align:center;
     cursor:pointer;

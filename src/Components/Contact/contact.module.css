@@ -1,6 +1,9 @@
 .ContactContainer {
-    width:80%;
+    width:100%;
+    height:100vh;
     margin:auto;
-    padding-top:5rem;
-    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

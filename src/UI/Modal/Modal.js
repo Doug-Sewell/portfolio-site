@@ -32,7 +32,7 @@ class Modal extends Component {
                 {/*Modal */}
                 <div className={classes.Modal}
                     style={{
-                        transform: this.props.show ? 'translate(-50%,-50%)' : 'translate(-50%,-100vh)', //Keeps trajectory of straight up and down.
+                        transform: this.props.show ? 'translate(-50%,-50%)' : 'translate(-50%,-150vh)', //Keeps trajectory of straight up and down.
                         opacity: this.props.show ? '1' : '0' //Fades when show property is set to false.
 
                     }} >

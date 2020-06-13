@@ -5,8 +5,8 @@ import ContactCard from './ContactCard/ContactCard';
 
 const contact = () =>
     <div className={classes.ContactContainer}>
+        <h1>Let's get in touch</h1>
         <Card>
-            <h1>Let's get in touch</h1>
             <ContactCard />
         </Card>
     </div>
