@@ -13,6 +13,10 @@ const Header = () => (
                 <Card>
                     <h1>Doug Sewell</h1>
                     <h2 className={classes.SubHeader}>Let's Build Great Things Together</h2>
+                    <p>Web Developer &amp; IT Professional with experience in various web technologies such React, Node, and
+others. Experienced with Web API’s and various libraries to accomplish tasks. Received multiple
+scholarships related to development and have a variety of development related certifications. Driven,
+passionate, and love to create and learn.</p>
                 </Card>
             </div>
         </div>

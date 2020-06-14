@@ -1,6 +1,7 @@
 .headerContainer {
     display:flex;
     min-height:100vh;
+    padding-top:3rem;
 }
 
 .headerContainer {
@@ -18,12 +19,13 @@
 
 .HeaderCard {
     width:80%;
+    max-width:30rem;
 }
 
 .photoContainer {
     max-width:15rem;
 }
 
-h1 {
+h1, h2 {
     margin-bottom:1rem;
 }
