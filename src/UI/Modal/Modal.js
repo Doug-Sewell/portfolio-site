@@ -39,9 +39,7 @@ class Modal extends Component {
                     <p
                         className={classes.Exit}
                         onClick={this.props.closeModal}>X</p>
-                    <h2>{this.props.company}</h2>
-                    <h3>{this.props.jobTitle}</h3>
-                    <hr />
+                    <h2>{this.props.jobTitle}</h2>
                     <p>{this.props.jobDescription}</p>
                     {this.props.jobResponsibilities ? <ul>{responsibilities}</ul> : null}
                 </div>
